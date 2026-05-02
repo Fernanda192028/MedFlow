@@ -20,85 +20,57 @@ Acesse o protótipo do sistema:
 ---
 
 ### 🧩 US-01 - Login
-**Como** paciente/profissional  
+**Como** usuário (paciente ou profissional)
 **Quero** realizar login com e-mail e senha  
-**Para** acessar meu painel com segurança  
+**Para** acessar meu painel de forma segura
 
 **Prioridade:** ALTA  
 **Story Points:** 5  
 
 ---
-
-### 🧩 US-02 - Acessar agenda
+### 🧩 US-02 - Fluxo de Agendamento
 **Como** paciente  
-**Quero** acessar a agenda  
-**Para** marcar uma consulta  
+**Quero** visualizar a lista de médicos e acessar suas agendas  
+**Para** escolher o profissional e marcar uma consulta. 
 
 **Prioridade:** ALTA  
-**Story Points:** 8  
+**Story Points:** 7    
 
 ---
 
-### 🧩 US-03 - Visualizar médicos
-**Como** paciente  
-**Quero** visualizar médicos  
-**Para** escolher um profissional  
+### 🧩 US-03 - Gestão de Disponibilidade
+**Como** profissional
+**Quero** configurar meus dias e horários de atendimento  
+**Para** que os pacientes saibam quando estou disponível para consultas. 
 
 **Prioridade:** ALTA  
-**Story Points:** 7  
+**Story Points:** 8
 
 ---
-
-### 🧩 US-04 - Gerenciar agenda
-**Como** profissional  
-**Quero** definir meus horários  
-**Para** organizar atendimentos  
-
-**Prioridade:** ALTA  
-**Story Points:** 7  
-
 
 
 # 🟢 SPRINT 2 - Sistema Completo
 
 
 
-### 🧩 US-05 - Cancelar consulta
+### 🧩 US-04 - Gerenciamento da Consulta
 **Como** paciente  
-**Quero** cancelar consulta  
-**Para** remarcar em outro dia  
+**Quero** poder cancelar ou reagendar minha consulta  
+**Para** adequar o atendimento a imprevistos na rotina. 
 
 **Prioridade:** MÉDIA  
 **Story Points:** 5  
 
 ---
 
-### 🧩 US-06 - Reagendar consulta
-**Como** paciente  
-**Quero** reagendar consulta  
-**Para** escolher nova data  
+### 🧩 US-05 - Sistema de Notificações
+**Como** usuário (paciente ou profissional) 
+**Quero**  ser notificado caso a outra parte cancele o agendamento
+**Para** que eu possa reorganizar minha agenda ou remarcar a consulta.
 
 **Prioridade:** MÉDIA  
 **Story Points:** 5  
 
 ---
 
-### 🧩 US-07 - Notificação para paciente
-**Como** paciente  
-**Quero** ser avisado quando consulta for cancelada pelo profissional  
-**Para** reagendar  
 
-**Prioridade:** BAIXA  
-**Story Points:** 3  
-
----
-
-### 🧩 US-08 - Notificação para profissional
-**Como** profissional  
-**Quero** ser avisado quando paciente cancelar  
-**Para** liberar horário  
-
-**Prioridade:** BAIXA  
-**Story Points:** 3  
-
----
