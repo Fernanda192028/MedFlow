@@ -72,10 +72,6 @@ header .logo {
     font-size: 3rem;
 }
 
-header .logo span {
-    color: var(--blue);
-}
-
 header .navbar ul {
     display: flex;
     align-items: center;
@@ -113,6 +109,10 @@ header .fa-times {
     box-shadow: .1rem .3rem rgba(0, 0, 0, .3);
 }
 
+span{
+    color: var(--blue);
+}
+
 .home {
     min-height: 100vh;
     padding-top: 10rem;
@@ -136,9 +136,6 @@ header .fa-times {
     color: var(--black);
 }
 
-.home .content h1 span {
-    color: var(--blue);
-}
 
 .home .content p {
     font-size: 1.9rem;
@@ -147,14 +144,104 @@ header .fa-times {
 }
 
 body {
-    height: 10000px;
+    height: 1000px;
+}
+
+.sobre {
+  min-height: 100vh;
+  padding: 10rem 2rem 6rem;
+  text-align: center;
+  color: var(--black);
+}
+
+.sobre h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 
+.sobre .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 3rem auto 0;
+}
 
+.sobre .content {
+  background: #fff;
+  border: 1px solid var(--blue);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  flex: 1 1 220px;
+  max-width: 400px;
+}
 
+.sobre .content h3 {
+  font-size: 2rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
 
+.sobre .content p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
 
+ 
+.cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 90rem;
+  margin: 0 auto 3rem;
+  padding-top: 3rem;
+}
+ 
+.cards-row--center {
+  justify-content: center;
+}
+ 
+
+.card {
+  background: var(--white);
+  border-radius: 1.2rem;
+  padding: 3.5rem 3rem;
+  width: 36rem;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+  border: 1px solid var(--blue);
+}
+ 
+.card:hover {
+  background: var(--blue);
+  transform: translateY(-.5rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .18);
+}
+
+.card:hover h3,
+.card:hover p {
+    color: var(--white);
+}
+.card .card-icon {
+  font-size: 3.6rem;
+  margin-bottom: 1.4rem;
+}
+ 
+.card h3 {
+  font-size: 1.9rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+ 
+.card p {
+  font-size: 1.5rem;
+  color: var(--black);
+  line-height: 1.6;
+}
 
 
 @media (max-width: 768px) {
@@ -201,4 +288,15 @@ body {
     .home .row {
         flex-flow: column;
     }
+
+    .cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+ 
+  .card {
+    width: 90%;
+    max-width: 42rem;
+  }
 }
