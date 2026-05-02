@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #dbe3ef;
+}
+
+/* HEADER */
+header {
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-size: 16px;
+}
+
+header span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #2d6cdf;
+  color: #2d6cdf;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.secao {
+  font-size: 13px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* BOTÃO */
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* CONSULTAS */
+.consulta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f7fb;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.cancelar {
+  border: 1px solid red;
+  color: red;
+  background: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* STATUS */
+.ok {
+  color: green;
+}
+
+.warn {
+  color: orange;
+}
+
+.erro {
+  color: red;
+}
+
+.cancelada {
+  opacity: 0.6;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamentos</title>
+  <link rel="stylesheet" href="css/agendamentos.css">
+</head>
+<body>
+
+<header>
+  <h1>🩺 Sistema de Agendas</h1>
+  <span>Portal do Paciente</span>
+</header>
+
+<div class="container">
+
+  <!-- Abas -->
+  <div class="tabs">
+    <button id="btnAgendar" class="active">Agendar Consulta</button>
+    <button id="btnConsultas">Minhas Consultas</button>
+  </div>
+
+  <!-- FORM -->
+  <div id="telaAgendar" class="card">
+    <h2>Agendar Nova Consulta</h2>
+
+    <p class="secao">Dados Pessoais</p>
+
+    <div class="grid">
+      <input type="text" placeholder="Nome completo">
+      <input type="email" placeholder="E-mail">
+      <input type="text" placeholder="Telefone">
+    </div>
+
+    <p class="secao">Dados da Consulta</p>
+
+    <div class="grid">
+      <select>
+        <option>Selecione o médico</option>
+      </select>
+
+      <input type="date">
+
+      <select>
+        <option>Selecione o horário</option>
+      </select>
+    </div>
+
+    <textarea placeholder="Observações..."></textarea>
+
+    <button class="btn">Confirmar Agendamento</button>
+  </div>
+
+  <!-- CONSULTAS -->
+  <div id="telaConsultas" class="card" style="display: none;">
+    <h2>Minhas Consultas</h2>
+
+    <div class="consulta">
+      <div>
+        <strong>Dr. João Santos</strong>
+        <p>24/03/2026 - 10:00</p>
+        <span class="ok">Confirmado</span>
+      </div>
+      <button class="cancelar">Cancelar</button>
+    </div>
+
+    <div class="consulta">
+      <div>
+        <strong>Dra. Ana Costa</strong>
+        <p>08/04/2026 - 14:30</p>
+        <span class="warn">Aguardando</span>
+      </div>
+      <button class="cancelar">Cancelar</button>
+    </div>
+
+    <div class="consulta cancelada">
+      <div>
+        <strong>Dr. Pedro Alves</strong>
+        <p>14/03/2026 - 09:00</p>
+        <span class="erro">Cancelado</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

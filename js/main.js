@@ -6,7 +6,7 @@ $(document).ready(function () {
         $('.navbar').toggleClass('nav-toggle')
     })
 
-    // Função 2 - Scroll Efeito
+// Função 2 - Scroll Efeito
     $(window).on('scroll load', function () {
         $('.fa-bars').removeClass('fa-times')
         $('.navbar').removeClass('nav-toggle')
@@ -64,4 +64,23 @@ $(document).ready(function () {
             $('#email').focus();
         }
     }
-    )});
+    )
+});
+
+
+// Função 5 - Alternar Telas Agendamento /Consultas
+console.log("JS carregado");
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.getElementById("btnConsultas").onclick = function() {
+    document.getElementById("telaAgendar").style.display = "none";
+    document.getElementById("telaConsultas").style.display = "block";
+  };
+
+  document.getElementById("btnAgendar").onclick = function() {
+    document.getElementById("telaAgendar").style.display = "block";
+    document.getElementById("telaConsultas").style.display = "none";
+  };
+
+});
