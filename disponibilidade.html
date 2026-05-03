@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Disponibilidade</title>
+  <link rel="stylesheet" href="css/disponibilidade.css">
+</head>
+<body>
+
+<header>
+  <h1>🩺 Disponibilidade</h1>
+  <span>Portal do médico</span>
+</header>
+
+<div class="container">
+
+  <!-- DADOS DO MÉDICO -->
+  <h2>Dados do Médico</h2>
+
+  <div class="perfil">
+    <input type="text" id="nomeMedico" placeholder="Nome do médico">
+
+    <select id="especialidade">
+      <option value="">Selecione a especialidade</option>
+      <option>Clínico Geral</option>
+      <option>Pediatria</option>
+      <option>Cardiologia</option>
+      <option>Dermatologia</option>
+      <option>Ortopedia</option>
+      <option>Ginecologia</option>
+    </select>
+  </div>
+
+  <!-- DISPONIBILIDADE -->
+  <h2>Disponibilidade</h2>
+
+  <table>
+    <tr>
+      <th>Ativo</th>
+      <th>Dia</th>
+      <th>Início</th>
+      <th>Fim</th>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" checked></td>
+      <td>Segunda</td>
+      <td><input type="time" value="08:00"></td>
+      <td><input type="time" value="17:00"></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" checked></td>
+      <td>Terça</td>
+      <td><input type="time" value="08:00"></td>
+      <td><input type="time" value="17:00"></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Quarta</td>
+      <td><input type="time"></td>
+      <td><input type="time"></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" checked></td>
+      <td>Quinta</td>
+      <td><input type="time" value="08:00"></td>
+      <td><input type="time" value="17:00"></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" checked></td>
+      <td>Sexta</td>
+      <td><input type="time" value="08:00"></td>
+      <td><input type="time" value="13:00"></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Sábado</td>
+      <td><input type="time"></td>
+      <td><input type="time"></td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox"></td>
+      <td>Domingo</td>
+      <td><input type="time"></td>
+      <td><input type="time"></td>
+    </tr>
+
+  </table>
+
+  <!-- BOTÃO -->
+  <button id="salvar">Salvar</button>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

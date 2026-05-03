@@ -72,7 +72,7 @@ h2 {
   color: #555;
 }
 
-/* GRID */
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

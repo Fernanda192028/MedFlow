@@ -84,3 +84,20 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
 });
+
+
+
+// Função 6 - Salvar disponibilidade do Médico
+
+  document.getElementById("salvar").onclick = function() {
+
+    let nome = document.getElementById("nomeMedico").value;
+    let esp = document.getElementById("especialidade").value;
+
+    if (nome === "" || esp === "") {
+      alert("Preencha nome e especialidade!");
+      return;
+    }
+
+    alert("Dados salvos!\n\nMédico: " + nome + "\nEspecialidade: " + esp);
+  };
